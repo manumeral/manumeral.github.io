@@ -23,9 +23,10 @@
   </head>
 
   <body>
+  <div class="gradient"></div>
   	<div class="main">
 	  	<section id="sec1">
-	  	<div class="container">
+	  	<div class="topcontainer">
 	  		<div class="content">
 	  			<div class="boldb" ><img src="images/b.png" class="img-responsive" /></div>
 	  			<h1>Hi there, my name is <b>Bishakh</b></h1>
@@ -35,7 +36,25 @@
 	  	</div>
 	  	</section>
 	  	<section id="sec2">
-	  		
+	  		<div class="container">
+	  			<div class="row">
+	  				<div class="col-md-4 col-lg-4 columns">
+	  					<img src="images/code.png"/>
+	  					<h1>Code</h1>
+	  					<p>I love playing with Python, along with its wonderful libraries like twisted and gtk. I also build web applications with PHP, MySQL, Javascript, Jquery. <br/> C and Java are not my favourite, but got to know them to get a degree.</p>
+	  				</div>
+					<div class="col-md-4 col-lg-4 columns">
+					<img src="images/design.png"/>
+					<h1>Design</h1>
+					<p>I like making my work beautiful, coz beautiful is better than ugly. Although I keep my styling minimalistic and just something that doesn't hurt my eyes.</p>
+					</div>
+					<div class="col-md-4 col-lg-4 columns">
+					<img src="images/foss.png"/>
+					<h1>Open Source</h1>
+					<p>I use open source OS, open source tools and would love to contribute to any open source project. I keep all of my code at GitHub so that's all opensource.</p>
+					</div>
+	  			</div>
+	  		</div>	  		
 	  	</section>
 
   	</div>
@@ -45,6 +64,11 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.onepage-scroll.min.js"></script>
 <script type="text/javascript">
-	$(".main").onepage_scroll(); 
+	$(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 768
+      });
+    }); 
 </script>
 </html>
