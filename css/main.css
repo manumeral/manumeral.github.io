@@ -1,3 +1,37 @@
+/*
+Animation Frames for background gardients
+*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes gradientChange {
+    0%  {background:#1e247e;}
+    10% {background:#57afbf;}
+    20% {background:#57bf8a;}
+    30% {background:#bf57a8;}
+    40% {background:#c93434;}
+    50% {background:#34c98f;}
+    60% {background:#40e2e8;}
+    70% {background:#05a488;}
+    80% {background:#b772bf;}
+    90% {background:#b138ad;}
+    100%{background:#444444;}
+}
+
+/* Standard syntax */
+@keyframes gradientChange {
+    0%  {background:#1e247e;}
+    10% {background:#57afbf;}
+    20% {background:#57bf8a;}
+    30% {background:#bf57a8;}
+    40% {background:#c93434;}
+    50% {background:#34c98f;}
+    60% {background:#40e2e8;}
+    70% {background:#05a488;}
+    80% {background:#b772bf;}
+    90% {background:#b138ad;}
+    100%{background:#444444;}
+}
+
 html{
  width: 100%;
  height: 100%
@@ -6,35 +40,73 @@ html{
 body {
   width: 100%;
   height: 100%;
-  overflow: auto
+  overflow: auto;
+    background:#1e247e;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: gradientChange;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: gradientChange;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 .container{
-  background: url("../bg.jpg");
-  background-size: cover;
   width: 100%;
   height:100%;
-  overflow:auto
+
+background: rgba(0,0,0,0.58);
+background: -moz-linear-gradient(45deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.56) 14%, rgba(140,140,140,0.52) 55%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.58)), color-stop(14%, rgba(0,0,0,0.56)), color-stop(55%, rgba(140,140,140,0.52)), color-stop(89%, rgba(0,0,0,0.5)), color-stop(100%, rgba(0,0,0,0.5)));
+background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.56) 14%, rgba(140,140,140,0.52) 55%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%);
+background: -o-linear-gradient(45deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.56) 14%, rgba(140,140,140,0.52) 55%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.56) 14%, rgba(140,140,140,0.52) 55%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%);
+background: linear-gradient(45deg, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.56) 14%, rgba(140,140,140,0.52) 55%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+
+  background-size: cover; 
+  overflow:auto;
+ 
+
 }
 .content{
   margin: 0 auto;
-  width: 40%;
+  width: 80%;
   margin-top: 8%;
-  font-family:georgia;
   color:#fff;
+  font-family: 'Dosis', sans-serif;
+ 
 
 }
 
 .content h1 {
-  font-size: 6em;
+  font-size: 3em;
   text-align: center;
-  color:#000
-
+   font-weight:200;
+}
+.content h1 b{
+  font-weight:300;
 }
 .content h2 {
-  font-size: 4em;
-  text-align: center
+  font-size: 1.6em;
+  text-align: center;
+  font-weight:200;
 }
-.content h3 {
-  font-size: 2em;
-  text-align: right
+
+.boldb {
+  width: 20%;
+  margin: 0 auto;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+.boldb:hover {
+  width: 30%;
 }
