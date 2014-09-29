@@ -139,6 +139,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   font-size: 1.5em;
   font-weight: 100;
 }
+.columns b {
+  font-size: 1em;
+  font-weight: 400;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
