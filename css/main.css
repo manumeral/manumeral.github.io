@@ -198,6 +198,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     overflow: none;
   }
 
+
+  .arrow{
+
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+
+}
+
+
 }
 
 #sec2{
