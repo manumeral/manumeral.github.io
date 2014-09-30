@@ -187,6 +187,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   cursor: pointer;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .topcontainer{
+    height: auto;
+    overflow: none;
+  }
+  #sec1{
+    height: auto;
+    overflow: none;
+  }
+
+}
+
 #sec2{
   height: 100%;
   overflow: auto;
@@ -194,6 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   background:#fff;
   font-family: 'Dosis', sans-serif;
 }
+
 
 #sec2 img {
   height: 6em;
@@ -220,4 +234,77 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   #sec2 img {
   height: 4em;
 }
+}
+
+
+#sec3{
+  height: 100%;
+  overflow: auto;
+  background: url('../images/pattern.jpg'); 
+  color: #d2dbd2;
+  font-family: 'Dosis', sans-serif;
+}
+
+#contactHeader{
+  text-align: center;
+}
+
+.mailform{
+  margin-top: 5%;
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
+.social{
+  width: 100%;
+  overflow: hidden;
+}
+.social div{
+  float: left;
+  margin:1%;
+  width: 22%;
+}
+
+.social div{
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-transition: .4s; /* For Safari 3.1 to 6.0 */
+    transition: .4s;
+}
+.social div:hover{
+  border-radius: 20%;
+  cursor:pointer;
+}
+.social img{
+  margin: 0 auto;
+  padding: 0;
+  -webkit-transition: .2s; /* For Safari 3.1 to 6.0 */
+    transition: .2s;
+}
+.social img:hover{
+  cursor:pointer;
+  opacity: 0;
+}
+
+.facebook{
+  background:url('../images/hover/facebook.png');
+}
+.twitter{
+  background:url('../images/hover/twitter.png');
+}
+.googleplus{
+  background:url('../images/hover/googleplus.png');
+}
+
+.github{
+  background:url('../images/hover/github.png');
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #sec3 {
+    height: auto;
+    overflow: none;
+  }
 }
