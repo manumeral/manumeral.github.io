@@ -31,6 +31,7 @@
 	  			<div class="boldb" ><img src="images/b.png" class="img-responsive" /></div>
 	  			<h1>Hi there, my name is <b>Bishakh</b></h1>
 	  			<h2>Programmer, Designer, Developer</h2>
+	  			<div class="arrow"><img class="img-circle img-responsive" src="images/arrow.png"/></div>
 	  			
 	  		</div>
 	  	</div>
@@ -38,6 +39,11 @@
 	  	<section id="sec2">
 	  		<div class="container">
 	  			<div class="row">
+	  				<div class="col-md-12 col-lg-12 columns">
+	  					<h1>My Work</h1><hr/>
+	  				</div>
+	  			</div>
+	  			<div class="row" id="works">
 	  				<div class="col-md-4 col-lg-4 columns">
 	  					<img src="images/code.png"/>
 	  					<h1>Code</h1>
@@ -65,10 +71,19 @@
 <script src="js/jquery.onepage-scroll.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
+
       $(".main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 768
       });
+     
+      $(".arrow").click(function(){
+      	$('body').animate({
+			scrollTop:$(document).height()
+			},1000, "swing"
+			);
+      });
+
     }); 
 </script>
 
